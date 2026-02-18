@@ -1,0 +1,9 @@
+name: Teste de Workflow
+on:
+  workflow_dispatch:   # permite iniciar manualmente
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Olá Mundo
+        run: echo "✅ Workflow ativo"
